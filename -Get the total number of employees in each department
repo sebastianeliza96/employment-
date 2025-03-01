@@ -1,0 +1,7 @@
+--Get the total number of employees in each department
+
+select d.department_name, count(e.id)
+from departments as d
+join employees as e 
+on d.id=e.department_id
+group by d.department_name;
